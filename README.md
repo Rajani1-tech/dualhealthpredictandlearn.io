@@ -18,16 +18,16 @@ A web application for predicting multiple diseases using machine learning. The s
 
 ```
 Multiple-Disease-Prediction/
-├── app.py                          
-├── plot_metric.py                 
-├── requirements.txt               
-├── README.md                       
+├── app.py                          # Main Streamlit application entry point
+├── plot_metric.py                  # Utility for plotting metrics
+├── requirements.txt                # Project dependencies
+├── README.md                       # This file
 │
 ├── data/
-│   ├── raw/                       
+│   ├── raw/                       # Original datasets
 │   │   ├── diabetes.csv
 │   │   └── heart.csv
-│   └── processed/                 
+│   └── processed/                 # Processed and split data
 │       ├── X_train.npy
 │       ├── X_test.npy
 │       ├── X_val.npy
@@ -35,68 +35,68 @@ Multiple-Disease-Prediction/
 │       ├── y_test.npy
 │       └── y_val.npy
 │
-├── database/                      
+├── database/                      # SQLite database
 │
-├── notebooks/                    
-│   ├── eda/                     
+├── notebooks/                     # Jupyter notebooks
+│   ├── eda/                      # Exploratory Data Analysis
 │   │   ├── eda_diabetic.ipynb
 │   │   └── eda_heart_disease.ipynb
-│   └── experiments/              
+│   └── experiments/              # Model experiments
 │
-├── results/                      
-│   ├── eda/                      
+├── results/                       # Results and outputs
+│   ├── eda/                      # EDA visualizations
 │   │   ├── diabetes/
 │   │   ├── heart_disease/
 │   │   └── breast_cancer/
-│   ├── metrics/                  
+│   ├── metrics/                  # Performance metrics CSV files
 │   │   └── diabetic_model_metrics.csv
-│   ├── plots/                   
-│   └── static/                  
+│   ├── plots/                    # Model performance plots
+│   └── static/                   # Static assets
 │       ├── diabetes/
 │       ├── heart_disease/
 │
-├── saved_models/                
+├── saved_models/                 # Trained model files
 │   ├── diabetes_model_decision_tree.sav
-│   ├── weights.npy             
-│   └── bias.npy                 
+│   ├── weights.npy              # Model weights
+│   └── bias.npy                 # Model bias
 │
-├── src/                          
+├── src/                          # Source code
 │   ├── __init__.py
 │   │
-│   ├── app/                      
+│   ├── app/                      # Streamlit application
 │   │   ├── __init__.py
-│   │   ├── main.py             
-│   │   └── pages/               
+│   │   ├── main.py              # (Not currently used)
+│   │   └── pages/               # Disease prediction pages
 │   │       ├── __init__.py
 │   │       ├── diabetes_page.py
 │   │       ├── heart_page.py
 │   │       └── breast_cancer_page.py
 │   │
-│   ├── auth/                     
+│   ├── auth/                     # Authentication module
 │   │   ├── __init__.py
-│   │   └── user.py              
+│   │   └── user.py              # User management and database
 │   │
-│   ├── config/                  
+│   ├── config/                   # Configuration
 │   │   ├── __init__.py
-│   │   └── settings.py          
+│   │   └── settings.py           # Application settings and paths
 │   │
-│   ├── models/                   
+│   ├── models/                   # Machine learning models
 │   │   ├── __init__.py
-│   │   ├── decision_tree.py     
-│   │   ├── logistic_regression.py 
-│   │   └── svm.py               
+│   │   ├── decision_tree.py     # Decision Tree implementation
+│   │   ├── logistic_regression.py # Logistic Regression implementation
+│   │   └── svm.py               # Support Vector Machine implementation
 │   │
-│   ├── training/                 
+│   ├── training/                 # Model training scripts
 │   │   ├── __init__.py
-│   │   ├── train_diabetes.py    
-│   │   └── train_heart.py      
+│   │   ├── train_diabetes.py    # Train diabetes model
+│   │   └── train_heart.py       # Train heart disease model
 │   │
-│   └── utils/                    
+│   └── utils/                    # Utility functions
 │       ├── __init__.py
-│       ├── visualization.py     
-│       ├── database.py          
-│       ├── data_preprocessing.py 
-│       └── model_evaluation.py  
+│       ├── visualization.py     # Plotting and visualization
+│       ├── database.py          # Database utilities
+│       ├── data_preprocessing.py # Data preprocessing functions
+│       └── model_evaluation.py  # Model evaluation utilities
 
     
 ```
